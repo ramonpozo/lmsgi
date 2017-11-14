@@ -1,0 +1,6 @@
+<?xml version = "1.0"?>
+<alumno>
+	<nombre> Ramon Pozo Gomez </nombre>
+	<edad> 21 </edad>
+	<belleza> MAXIMA </belleza>
+</alumno>

@@ -1,0 +1,12 @@
+<xs:element name="menu_almuerzo">
+	<xs:complexType>
+		<xs:element name="comida">
+			<xs:complexType>
+				<xs:element name="nombre" type="xs:string"/>
+				<xs:element name="precio" type="xs:float"/>
+				<xs:element name="descripcion" type="xs:string"/>
+				<xs:element name="calorias" type="xs:integer"/>
+			</xs:complexType>
+		</xs:element>
+	</xs:complexType>
+</xs:element>

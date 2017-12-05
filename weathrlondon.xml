@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<weahter>
+	<coord>
+		<lon>-0.13</lon>
+		<lat>51.51</lat>
+	</coord>
+	<weatherIn>
+		<id>300</id>
+		<main>Drizzle</main>
+		<description>Light intensity drizzle</description>
+		<icon>09d</icon>
+	</weatherIn>
+	<base>stations</base>
+	<main>
+		<temp>280.32</temp>
+		<pressure>1012</pressure>
+		<humidity>81</humidity>
+		<temp_min>279.15</temp_min>
+		<temp_max>281.15</temp_max>
+	</main>
+	<visibility>10000</visibility>
+	<wind>
+		<speed>4.1</speed>
+		<deg>80</deg>
+	</wind>
+	<clouds>
+		<all>90</all>
+	</clouds>
+	<dt>1485789600</dt>
+	<sys>
+		<type>1</type>
+		<id>5091</id>
+		<message>0.0103</message>
+		<country>GB</country>
+		<sunrise>1485762037</sunrise>
+		<sunset>1485794875</sunset>
+	</sys>
+	<id>2643743</id>
+	<name>London</name>
+	<cod>200</cod>
+</weahter>

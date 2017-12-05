@@ -1,0 +1,82 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="weahter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="coord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:float" name="lon"/>
+                <xs:simpleType>
+                  <xs:restriction base="xs:float">
+                    <xs:minIncluded value="-180"/>
+                    <xs:maxIncluded value="180"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              <xs:element type="xs:float" name="lat"/>
+                <xs:simpleType>
+                  <xs:restriction base="xs:float">
+                    <xs:minIncluded value="-90"/>
+                    <xs:maxIncluded value="90"/>
+                  </xs:restriction>
+                </xs:simpleType>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="weatherIn">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:short" name="id"/>
+              <xs:element type="xs:string" name="main"/>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:float" name="icon"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="base"/>
+        <xs:element name="main">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:float" name="temp"/>
+              <xs:element type="xs:short" name="pressure"/>
+              <xs:element type="xs:byte" name="humidity"/>
+              <xs:element type="xs:float" name="temp_min"/>
+              <xs:element type="xs:float" name="temp_max"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:short" name="visibility"/>
+        <xs:element name="wind">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:float" name="speed"/>
+              <xs:element type="xs:byte" name="deg"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="clouds">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="all"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:int" name="dt"/>
+        <xs:element name="sys">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="type"/>
+              <xs:element type="xs:short" name="id"/>
+              <xs:element type="xs:float" name="message"/>
+              <xs:element type="xs:string" name="country"/>
+              <xs:element type="xs:int" name="sunrise"/>
+              <xs:element type="xs:int" name="sunset"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:int" name="id"/>
+        <xs:element type="xs:string" name="name"/>
+        <xs:element type="xs:short" name="cod"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
